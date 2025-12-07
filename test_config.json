@@ -1,0 +1,11 @@
+{
+  "endpoint": "https://litellm-prod.apps.maas.redhatworkshops.io",
+  "model_name": "granite-3-2-8b-instruct",
+  "api_key": "sk-kL5MKx72-2LLAlooircgAQ",
+  "concurrent_users": 60,
+  "test_duration_seconds": 600,
+  "max_context_tokens": 16000,
+  "request_timeout": 120,
+  "max_retries": 3,
+  "verify_ssl": false
+}

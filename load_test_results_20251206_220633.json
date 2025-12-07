@@ -1,0 +1,176 @@
+{
+  "config": {
+    "endpoint": "https://litellm-prod.apps.maas.redhatworkshops.io",
+    "model": "llama-scout-17b",
+    "concurrent_users": 10,
+    "test_duration": 60,
+    "max_context": 6000,
+    "request_timeout": 30,
+    "max_retries": 1
+  },
+  "summary": {
+    "total_requests": 10,
+    "successful": 0,
+    "failed": 6,
+    "timeouts": 4,
+    "retried": 10,
+    "test_duration": 95.57327198982239,
+    "endpoint_health": {
+      "total_checks": 3,
+      "healthy_checks": 2,
+      "final_status": "unhealthy"
+    }
+  },
+  "health_checks": [
+    {
+      "timestamp": 1765038899.475838,
+      "status": "healthy",
+      "http_status": 200,
+      "response": "OK"
+    },
+    {
+      "timestamp": 1765038902.906899,
+      "status": "healthy",
+      "http_status": 200,
+      "response": "OK"
+    },
+    {
+      "timestamp": 1765038963.7022238,
+      "status": "error",
+      "error": ""
+    }
+  ],
+  "response_samples": [],
+  "results": [
+    {
+      "user_id": 5,
+      "request_type": "MCP_file_search",
+      "context_length": 1538,
+      "status": "error",
+      "response_time": 30.267118215560913,
+      "tokens_sent": 1544,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038961.347143,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 2,
+      "request_type": "MCP_code_review",
+      "context_length": 1994,
+      "status": "error",
+      "response_time": 30.841130018234253,
+      "tokens_sent": 2000,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038962.5494668,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 1,
+      "request_type": "MCP_data_analysis",
+      "context_length": 2370,
+      "status": "error",
+      "response_time": 30.816433906555176,
+      "tokens_sent": 2374,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038963.519216,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 6,
+      "request_type": "MCP_file_search",
+      "context_length": 1629,
+      "status": "error",
+      "response_time": 30.814361095428467,
+      "tokens_sent": 1635,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038963.519684,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 7,
+      "request_type": "MCP_code_review",
+      "context_length": 2276,
+      "status": "error",
+      "response_time": 30.267798900604248,
+      "tokens_sent": 2282,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038963.975926,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 9,
+      "request_type": "MCP_file_search",
+      "context_length": 1405,
+      "status": "error",
+      "response_time": 30.274039030075073,
+      "tokens_sent": 1411,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038963.980615,
+      "retry_count": 1,
+      "error": "HTTP 504: <html><body><h1>504 Gateway Time-out</h1>\nThe server didn't respond in time.\n</body></html>\n"
+    },
+    {
+      "user_id": 4,
+      "request_type": "Agentic_problem_solving",
+      "context_length": 4229,
+      "status": "timeout",
+      "response_time": 30.997413873672485,
+      "tokens_sent": 4234,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038964.705971,
+      "retry_count": 1,
+      "error": "Request timeout"
+    },
+    {
+      "user_id": 0,
+      "request_type": "Agentic_research_task",
+      "context_length": 3367,
+      "status": "timeout",
+      "response_time": 30.024477005004883,
+      "tokens_sent": 3371,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038964.70822,
+      "retry_count": 1,
+      "error": "Request timeout"
+    },
+    {
+      "user_id": 3,
+      "request_type": "Agentic_research_task",
+      "context_length": 2842,
+      "status": "timeout",
+      "response_time": 30.0430109500885,
+      "tokens_sent": 2846,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038964.708413,
+      "retry_count": 1,
+      "error": "Request timeout"
+    },
+    {
+      "user_id": 8,
+      "request_type": "Agentic_research_task",
+      "context_length": 2931,
+      "status": "timeout",
+      "response_time": 30.113561153411865,
+      "tokens_sent": 2935,
+      "tokens_received": 0,
+      "response_content": null,
+      "timestamp": 1765038965.702591,
+      "retry_count": 1,
+      "error": "Request timeout"
+    }
+  ]
+}
